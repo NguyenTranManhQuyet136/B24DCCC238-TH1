@@ -37,21 +37,16 @@
 		icon: 'ArrowsAltOutlined',
 	},
 	{
-		name: 'BaiTap',
-		path: '/bai-tap',
-		icon: 'SolutionOutlined',
-		routes: [
-			{
-				path: '/bai-tap/guess-number',
-				name: 'Guess Number',
-				component: './BaiTap/GuessNumber',
-			},
-			{
-				path: '/bai-tap/todo-list',
-				name: 'Todo List',
-				component: './BaiTap/TodoList',
-			},
-		],
+		path: '/bai-tap/guess-number',
+		name: 'Guess Number',
+		component: './BaiTap/GuessNumber',
+		icon: 'NumberOutlined',
+	},
+	{
+		path: '/bai-tap/todo-list',
+		name: 'Todo List',
+		component: './BaiTap/TodoList',
+		icon: 'OrderedListOutlined',
 	},
 
 	// DANH MUC HE THONG
