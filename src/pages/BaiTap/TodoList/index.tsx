@@ -11,10 +11,14 @@ interface TodoItem {
 }
 
 const TodoList: React.FC = () => {
+  // State lưu danh sách công việc
   const [todos, setTodos] = useState<TodoItem[]>([]);
+  // State lưu giá trị đang nhập
   const [inputValue, setInputValue] = useState<string>('');
+  // State lưu id của công việc đang chỉnh sửa
   const [editingId, setEditingId] = useState<number | null>(null);
 
+  // useEffect lấy dữ liệu từ LocalStorage khi component được load lần đầu
   useEffect(() => {
     const savedTodos = localStorage.getItem('todoList');
     if (savedTodos) {
@@ -26,10 +30,12 @@ const TodoList: React.FC = () => {
     }
   }, []);
 
+  // useEffect lưu dữ liệu vào LocalStorage mỗi khi danh sách todos thay đổi
   useEffect(() => {
     localStorage.setItem('todoList', JSON.stringify(todos));
   }, [todos]);
 
+  // Hàm thêm hoặc cập nhật công việc
   const handleAddTodo = () => {
     if (!inputValue.trim()) {
       message.warning('Vui lòng nhập nội dung công việc!');
@@ -37,6 +43,7 @@ const TodoList: React.FC = () => {
     }
 
       if (editingId !== null) {
+      // Logic cập nhật công việc hiện có
       const updatedTodos = todos.map(todo => 
         todo.id === editingId ? { ...todo, text: inputValue } : todo
       );
@@ -44,6 +51,7 @@ const TodoList: React.FC = () => {
       setEditingId(null);
       message.success('Cập nhật công việc thành công!');
     } else {
+      // Logic thêm công việc mới
       const newTodo: TodoItem = {
         id: Date.now(),
         text: inputValue,
@@ -55,12 +63,14 @@ const TodoList: React.FC = () => {
     setInputValue('');
   };
 
+  // Hàm xóa công việc
   const handleDeleteTodo = (id: number) => {
     const newTodos = todos.filter(todo => todo.id !== id);
     setTodos(newTodos);
     message.success('Đã xóa công việc!');
   };
 
+  // Hàm đánh dấu hoàn thành công việc
   const handleToggleComplete = (id: number) => {
     const updatedTodos = todos.map(todo => 
       todo.id === id ? { ...todo, completed: !todo.completed } : todo
@@ -68,11 +78,13 @@ const TodoList: React.FC = () => {
     setTodos(updatedTodos);
   };
 
+  // Hàm bắt đầu chế độ chỉnh sửa
   const startEdit = (todo: TodoItem) => {
     setInputValue(todo.text);
     setEditingId(todo.id);
   };
 
+  // Hàm hủy chỉnh sửa
   const cancelEdit = () => {
     setInputValue('');
     setEditingId(null);
