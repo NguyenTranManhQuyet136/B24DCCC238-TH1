@@ -48,6 +48,39 @@
 		component: './BaiTap/TodoList',
 		icon: 'OrderedListOutlined',
 	},
+	{
+		path: '/oan-tu-ti',
+		name: 'Oẳn Tù Tì',
+		component: './OanTuTi',
+		icon: 'ScissorOutlined',
+	},
+	{
+		path: '/bai-2',
+		name: 'Bài 2',
+		icon: 'AppstoreOutlined',
+		routes: [
+			{
+				path: '/bai-2/khoi-kien-thuc',
+				name: 'Khối Kiến Thức',
+				component: './KhoiKienThuc',
+			},
+			{
+				path: '/bai-2/mon-hoc',
+				name: 'Môn Học',
+				component: './MonHoc',
+			},
+			{
+				path: '/bai-2/cau-hoi',
+				name: 'Câu Hỏi',
+				component: './CauHoi',
+			},
+			{
+				path: '/bai-2/de-thi',
+				name: 'Đề Thi',
+				component: './DeThi',
+			},
+		],
+	},
 
 	// DANH MUC HE THONG
 	// {
