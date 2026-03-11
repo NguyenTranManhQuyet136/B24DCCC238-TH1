@@ -81,7 +81,38 @@
 			},
 		],
 	},
-
+	{
+		path: '/bai-3',
+		name: 'Bài 3',
+		icon: 'AppstoreOutlined',
+		routes: [
+			{
+				path: '/bai-3/nhan-vien',
+				name: 'Nhân Viên',
+				component: './NhanVien',
+			},
+			{
+				path: '/bai-3/dich-vu',
+				name: 'Dịch Vụ',
+				component: './DichVu',
+			},
+			{
+				path: '/bai-3/lich-hen',
+				name: 'Lịch Hẹn',
+				component: './LichHen',
+			},
+			{
+				path: '/bai-3/danh-gia',
+				name: 'Đánh Giá',
+				component: './DanhGia',
+			},
+			{
+				path: '/bai-3/thong-ke',
+				name: 'Thống Kê',
+				component: './ThongKe',
+			},
+		],
+	},
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
