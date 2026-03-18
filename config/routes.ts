@@ -113,6 +113,18 @@
 			},
 		],
 	},
+	{
+		path: '/bai-4',
+		name: 'Bài 4',
+		icon: 'AppstoreOutlined',
+		routes: [
+			{
+				path: '/bai-4/th-04',
+				name: 'Thực Hành 04',
+				component: './TH4',
+			},
+		],
+	},
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
