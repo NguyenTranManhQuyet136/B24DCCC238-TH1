@@ -1,4 +1,4 @@
-﻿export default [
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -122,6 +122,18 @@
 				path: '/bai-4/th-04',
 				name: 'Thực Hành 04',
 				component: './TH4',
+			},
+		],
+	},
+	{
+		path: '/bai-5',
+		name: 'Bài 5',
+		icon: 'AppstoreOutlined',
+		routes: [
+			{
+				path: '/bai-5/clb',
+				name: 'Quản lý Câu lạc bộ',
+				component: './CLB',
 			},
 		],
 	},
