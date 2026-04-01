@@ -137,6 +137,33 @@ export default [
 			},
 		],
 	},
+	{
+		path: '/bai-6',
+		name: 'Bài 6',
+		icon: 'AppstoreOutlined',
+		routes: [
+			{
+				path: '/bai-6/kham-pha',
+				name: 'Khám phá điểm đến',
+				component: './TH6/KhamPha',
+			},
+			{
+				path: '/bai-6/lich-trinh',
+				name: 'Tạo lịch trình',
+				component: './TH6/LichTrinh',
+			},
+			{
+				path: '/bai-6/ngan-sach',
+				name: 'Ngân sách',
+				component: './TH6/NganSach',
+			},
+			{
+				path: '/bai-6/quan-tri',
+				name: 'Quản trị Admin',
+				component: './TH6/QuanTri',
+			},
+		],
+	},
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
