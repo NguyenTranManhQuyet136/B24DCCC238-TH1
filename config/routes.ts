@@ -164,6 +164,18 @@ export default [
 			},
 		],
 	},
+	{
+		path: '/bai-7',
+		name: 'Bài 7',
+		icon: 'AppstoreOutlined',
+		routes: [
+			{
+				path: '/bai-7/quan-ly-cong-viec',
+				name: 'Quản lý Công việc',
+				component: './TH7',
+			},
+		],
+	},
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
