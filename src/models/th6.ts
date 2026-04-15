@@ -11,7 +11,7 @@ export default {
 				price_travel: 300000,
 				time: '2 ngày',
 				rating: 5,
-				image: 'https://images.unsplash.com/photo-1596711516024-5d5e56e4c767?auto=format&fit=crop&q=80&w=400',
+				image: 'https://cdn-media.sforum.vn/storage/app/media/ctv_seo3/anh-vinh-ha-long-thumbnail.jpg',
 				desc: 'Kỳ quan thiên nhiên thế giới'
 			},
 			{
@@ -23,7 +23,7 @@ export default {
 				price_travel: 500000,
 				time: '3 ngày',
 				rating: 4.5,
-				image: 'https://images.unsplash.com/photo-1549488344-c711a196e811?auto=format&fit=crop&q=80&w=400',
+				image: 'https://www.luavietours.com/wp/wp-content/uploads/2024/10/1-canh-dep-sapa-luon-dua-du-khach-tu-bat-ngo-nay-den-bat-ngo-khac-750x499.jpg',
 				desc: 'Thành phố mờ sương'
 			},
 			{
@@ -35,7 +35,7 @@ export default {
 				price_travel: 200000,
 				time: '4 ngày',
 				rating: 4.8,
-				image: 'https://images.unsplash.com/photo-1559404221-db9b09a96ea8?auto=format&fit=crop&q=80&w=400',
+				image: 'https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/Knms/meo-vat/avatar-trai-nghiem-24-dia-diem-du-lich-da-nang.jpg',
 				desc: 'Thành phố đáng sống'
 			},
 			{
@@ -47,7 +47,7 @@ export default {
 				price_travel: 400000,
 				time: '3 ngày',
 				rating: 4.9,
-				image: 'https://images.unsplash.com/photo-1601633512217-4ac9f90be0d8?auto=format&fit=crop&q=80&w=400',
+				image: 'https://statics.vntrip.vn/data-v2/data-guide/img_content/1470302452_anh-5.jpg',
 				desc: 'Đảo ngọc xanh mát'
 			}
 		],
