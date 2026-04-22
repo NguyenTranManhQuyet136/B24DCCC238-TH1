@@ -1,4 +1,4 @@
-﻿export default [
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -37,17 +37,12 @@
 		icon: 'ArrowsAltOutlined',
 	},
 	{
-		path: '/bai-tap/guess-number',
-		name: 'Guess Number',
-		component: './BaiTap/GuessNumber',
-		icon: 'NumberOutlined',
+		path: '/quan-ly-don-hang',
+		name: 'Quản lý đơn hàng',
+		component: './QuanLyDonHang',
+		icon: 'ShoppingCartOutlined',
 	},
-	{
-		path: '/bai-tap/todo-list',
-		name: 'Todo List',
-		component: './BaiTap/TodoList',
-		icon: 'OrderedListOutlined',
-	},
+
 
 	// DANH MUC HE THONG
 	// {
