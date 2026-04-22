@@ -16,7 +16,6 @@ const KhamPha = (props: any) => {
 	// biến data1, data2 code bẩn
 	let data1 = props.th6?.destinations || [];
 
-	// filter dài ngoằng
 	let data2 = data1.filter((item: any) => {
 		let dk1 = true;
 		if (typeFilter !== 'all') {

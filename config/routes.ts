@@ -55,6 +55,12 @@ export default [
 		icon: 'ScissorOutlined',
 	},
 	{
+		path: '/bai-tap/profile-card',
+		name: 'Profile Card',
+		component: './baitapprofilecard',
+		icon: 'UserOutlined',
+	},
+	{
 		path: '/bai-2',
 		name: 'Bài 2',
 		icon: 'AppstoreOutlined',
